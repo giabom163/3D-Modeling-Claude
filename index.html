@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f1ea"><title>花与光 · Sunflower Blade</title></head>
+<body>
+  <main id="app">
+    <header><a class="brand" href="#"><span class="brand-mark">✳</span><span>花与光 <small>SUNFLOWER BLADE</small></span></a><span class="edition">CHARACTER STUDY <b>01 / 05</b></span></header>
+    <section class="intro"><div class="eyebrow">INTERACTIVE 3D ATELIER</div><h1>温柔的花，<br>也有锋芒。</h1><p>橙色卷发与蕾丝裙摆。<br>握住一束光，开启她的五种姿态。</p><div class="material-tag"><i></i> 橙 · 白 · 黑 <span> / </span> 等离子青</div></section>
+    <div id="viewport" aria-label="可拖动旋转的三维角色"></div>
+    <div class="scene-note"><span class="live-dot"></span> 实时 3D <span class="note-divider">/</span> 拖动旋转 · 滚轮缩放</div>
+    <aside class="views" aria-label="视角"><button data-view="front" title="正面">正</button><button data-view="side" title="侧面">侧</button><button data-view="back" title="背面">背</button><button data-view="hero" title="恢复初始视角">↺</button></aside>
+    <section class="action-panel" aria-label="握剑动作"><div class="panel-caption"><span>CHOOSE A POSE</span><span id="pose-description">单手持剑，自然呼吸</span></div><div id="actions">
+      <button data-pose="idle" class="active" aria-pressed="true"><small>01</small><span>待机</span><em>IDLE</em></button>
+      <button data-pose="charge" aria-pressed="false"><small>02</small><span>蓄力</span><em>CHARGE</em></button>
+      <button data-pose="slash" aria-pressed="false"><small>03</small><span>横挥</span><em>SLASH</em></button>
+      <button data-pose="thrust" aria-pressed="false"><small>04</small><span>突刺</span><em>THRUST</em></button>
+      <button data-pose="guard" aria-pressed="false"><small>05</small><span>格挡</span><em>GUARD</em></button>
+    </div><div class="panel-footer"><span>键盘 <kbd>1</kbd> — <kbd>5</kbd> 切换动作 · <kbd>空格</kbd> 重播</span><label><input id="auto-rotate" type="checkbox"> 自动环绕</label></div></section>
+    <footer><span>PROCEDURAL CHARACTER · PBR MATERIALS</span><span id="model-info">正在准备场景…</span></footer>
+    <div id="error" role="alert" hidden></div>
+  </main><script type="module" src="/src/main.js"></script>
+</body></html>
